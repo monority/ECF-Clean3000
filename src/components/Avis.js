@@ -1,28 +1,30 @@
 import React from 'react';
 import Header from './Header';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import clients from "../clients";
 import techniciens from '../techniciens';
 import { DatePicker } from 'antd';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { addAvis } from '../slices';
+import CurrentAvis from './CurrentAvis';
 
 
 const Avis = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
 
-
+  const navigate = useNavigate();
   const [addClientArray, setClientArray] = useState({
     name: "",
     technicien: "",
     date: "",
-    commentary:"",
+    commentary: "",
   });
 
   const addClient = () => {
     dispatch(addAvis(addClientArray));
+    navigate((`/currentavis/${id}`))
   };
 
   const addNameClient = (e) => {
