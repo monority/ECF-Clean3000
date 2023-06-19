@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 const CurrentAvis = () => {
     const { id } = useParams();
     const clients = useSelector(state => state.data.clients);
-    const currentClient = clients.find(client => client.id === Number(id));
+    const currentClient = clients.find(client => client.id == id);
 
     return (
         <div>
@@ -17,13 +17,13 @@ const CurrentAvis = () => {
                         <h1>Votre avis de commande numéro : {id}</h1>
                         {currentClient && (
                             <div>
-                                <h2>Client Details:</h2>
+                                <h2>Détails de l'avis de passage</h2>
                                 {currentClient.avisdepassage.map((avis, index) => (
                                     <div key={index}>
-                                        <p>Name: {avis.name}</p>
-                                        <p>Technicien: {avis.technicien}</p>
-                                        <p>Date: {avis.date}</p>
-                                        <p>Commentary: {avis.commentary}</p>
+                                        <p><strong>Votre nom</strong> : {avis.name}</p>
+                                        <p><strong>Technicien </strong> : {avis.technicien}</p>
+                                        <p><strong>Date </strong> : {avis.date}</p>
+                                        <p><strong>Observation(s) </strong> : {avis.commentary}</p>
                                     </div>
                                 ))}
                             </div>
