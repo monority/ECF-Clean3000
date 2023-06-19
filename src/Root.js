@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import App from "./App";
 import NotFound from './components/NotFound';
 import Avis from './components/Avis';
-import CurrentAvis from './components/CurrentAvis';
+import ListAvis from './components/ListAvis';
 
 
 const Root = () => {
@@ -12,7 +12,7 @@ const Root = () => {
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route exact path="order/:id" element={<Avis />} />
-        <Route exact path="currentAvis" element={<CurrentAvis />} />
+        <Route exact path="listAvis" element={<ListAvis />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>

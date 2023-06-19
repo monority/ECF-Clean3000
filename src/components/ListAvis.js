@@ -2,12 +2,11 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Header from './Header';
 
-const AvisDePassagePage = () => {
+const ListAvis = () => {
   const clients = useSelector((state) => state.data.clients);
   const print = () => window.print();
   const listAvis = () => {
     return (
-
       clients.map((client) => (
         <div key={client.id}>
           <h2>Avis de passage numéro : <strong>{client.id}</strong></h2>
@@ -25,22 +24,22 @@ const AvisDePassagePage = () => {
   }
 
 
-return (
-  <div>
-    <Header />
-    <div className="main">
-      <div className="currentAvis">
-        <div className="container">
-          <h1>Avis de Passage</h1>
-          {listAvis()}
-          <button className="printButton" onClick={print}>
-        Imprimer
-      </button>
+  return (
+    <div>
+      <Header />
+      <div className="main">
+        <div className="currentAvis">
+          <div className="container">
+            <h1>Avis de Passage</h1>
+            {listAvis()}
+            <button className="printButton" onClick={print}>
+              Imprimer
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
 };
 
-export default AvisDePassagePage;
+export default ListAvis;

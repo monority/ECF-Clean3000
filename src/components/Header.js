@@ -28,7 +28,7 @@ const Header = () => {
                     <ul>
                         <li onClick={() => navigate("/")}>Accueil</li>
                         <li onClick={() => createNewOrder()}>Avis de Passage</li>
-                        <li onClick={() => navigate("/currentAvis")}>Liste des avis</li>
+                        <li onClick={() => navigate("/listAvis")}>Liste des avis</li>
                     </ul>
                 </div>
             </div>

@@ -1,8 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import clients from '../clients';
 
 const initialState = {
-    avis: [],
+    clients: [],
 };
 
 export const dataSlice = createSlice({
@@ -14,11 +13,11 @@ export const dataSlice = createSlice({
                 id: payload,
                 avisdepassage: [],
             };
-            state.avis.push(order);
+            state.clients.push(order);
         },
         addAvis: (state, action) => {
-            const arrayLocation = state.avis.length - 1;
-            state.avis[arrayLocation].avisdepassage.push(action.payload);
+            const arrayLocation = state.clients.length - 1;
+            state.clients[arrayLocation].avisdepassage.push(action.payload);
         },
     },
 });
