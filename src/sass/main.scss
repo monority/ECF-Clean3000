@@ -108,7 +108,7 @@
     }
 
     .myButton {
-        box-shadow: 0px 10px 14px -7px #3dc21b;
+       
         background: linear-gradient(to bottom, #59a56d 5%, #2a5017 100%);
         background-color: #308d49;
         border-radius: 8px;
@@ -121,11 +121,12 @@
         padding: 13px 32px;
         text-decoration: none;
         text-shadow: 0px 1px 0px #2f6627;
-        transition: all 1s ease-out;
+        transition: all 0.5s ease-out;
 
         &:hover {
-            background: linear-gradient(to bottom, #2b5716 5%, #0f6325 100%);
+            background: linear-gradient(to bottom, #1a8f16 5%, #045a1b 100%);
             background-color: #214410;
+            color: grey;
         }
     }
     .myButton:active {
