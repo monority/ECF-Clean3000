@@ -31,8 +31,9 @@
                 list-style-type: none;
                 transition: all 0.3s ease-in-out;
                 cursor: pointer;
-                &:hover{
-                    color:rgb(187, 199, 187);
+
+                &:hover {
+                    color: rgb(187, 199, 187);
                 }
             }
         }
@@ -107,42 +108,47 @@
 
     }
 
-    .myButton {
-       
-        background: linear-gradient(to bottom, #59a56d 5%, #2a5017 100%);
-        background-color: #308d49;
-        border-radius: 8px;
-        display: inline-block;
-        cursor: pointer;
-        color: #ffffff;
-        font-family: Arial;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 13px 32px;
-        text-decoration: none;
-        text-shadow: 0px 1px 0px #2f6627;
-        transition: all 0.5s ease-out;
 
-        &:hover {
-            background: linear-gradient(to bottom, #1a8f16 5%, #045a1b 100%);
-            background-color: #214410;
-            color: grey;
-        }
+    .myButton {
+
+        font-weight: 100;
+        font-size: 16px;
+        color: #fff;
+        background-color: #11610c;
+        padding: 10px 30px;
+        border: none;
+        box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+        border-radius: 17px;
+        transition: 1173ms;
+        transform: translateY(0);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
     }
-    .myButton:active {
-        position: relative;
-        top: 3px;
+
+    .myButton:hover {
+
+        transition: 1000ms;
+        padding: 10px 57px;
+        transform: translateY(-2px);
+        background-color: #368a1f;
+        color: #ffffff;
+        border: solid 1px #0066cc;
     }
+
+
 }
 
-.currentAvis{
+.currentAvis {
     text-align: center;
 
-    h2{
-        color:rgb(0, 128, 64);
+    h2 {
+        color: rgb(0, 128, 64);
     }
-    strong{
-        color:v.$colorGreenMain;
-     
+
+    strong {
+        color: v.$colorGreenMain;
+
     }
 }
