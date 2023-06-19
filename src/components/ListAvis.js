@@ -40,9 +40,9 @@ const ListAvis = () => {
           <div className="container">
             <h1>Avis de Passage</h1>
             {listAvis()}
-            <button className="printButton" onClick={print}>
+            <p className="printButton" onClick={print}>
               Imprimer
-            </button>
+            </p>
           </div>
         </div>
       </div>

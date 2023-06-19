@@ -7,7 +7,7 @@ const CurrentAvis = () => {
     const { id } = useParams();
     const clients = useSelector(state => state.data.clients);
     const currentClient = clients.find(client => client.id == id);
-
+    const print = () => window.print();
     return (
         <div>
             <Header />
@@ -28,6 +28,9 @@ const CurrentAvis = () => {
                                 ))}
                             </div>
                         )}
+                        <p className="printButton" onClick={print}>
+                            Imprimer
+                        </p>
                     </div>
                 </div>
             </div>
