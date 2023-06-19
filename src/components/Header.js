@@ -9,7 +9,7 @@ const Header = () => {
     const dispatch = useDispatch();
 
     const generateId = () => {
-        return Math.floor(Math.random() * 100);
+        return Math.floor(Math.random() * 10000);
     };
     const createNewOrder = () => {
 
