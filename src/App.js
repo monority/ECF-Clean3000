@@ -15,20 +15,18 @@ function App() {
             <div className="wrappers">
               <Row gutter={16}>
                 <Col md={8} sm={16}>
-                  <Card title="Expert dans le domaine" bordered={false}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ligula tempor, mollis lectus eget, consectetur est. Sed diam lacus, fermentum vel sem sit amet, maximus iaculis purus. Proin in leo non lacus fringilla mattis eu eget mauris. Donec imperdiet tortor pulvinar gravida vulputate. Curabitur ullamcorper porta diam, ac feugiat erat sodales auctor. Proin id tellus euismod lacus pretium feugiat. Vivamus libero mi, ullamcorper vel sapien vitae, rhoncus orna
+                  <Card title="Notre entreprise à votre service" bordered={false}>
+                    Bienvenue sur votre site pour déclarer vos avis de passage et laisser des commentaires.
+                    En ligne 24/24, 7 jours sur 7.
                   </Card>
                 </Col>
                 <Col md={8} sm={16}>
                   <Card title="Des relations clients durables" bordered={false}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ligula tempor, mollis lectus eget, consectetur est. Sed diam lacus, fermentum vel sem sit amet, maximus iaculis purus. Proin in leo non lacus fringilla mattis eu eget mauris. Donec imperdiet tortor pulvinar gravida vulputate. Curabitur ullamcorper porta diam, ac feugiat erat sodales auctor. Proin id tellus euismod lacus pretium feugiat. Vivamus libero mi, ullamcorper vel sapien vitae, rhoncus orna
+                    Nous prenons nos clients en considération et nous vous laissons à disposition une application
+                    simple et réactive.
                   </Card>
                 </Col>
-                <Col md={8} sm={16}>
-                  <Card title="Produits venant de la culture bio" bordered={false}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ligula tempor, mollis lectus eget, consectetur est. Sed diam lacus, fermentum vel sem sit amet, maximus iaculis purus. Proin in leo non lacus fringilla mattis eu eget mauris. Donec imperdiet tortor pulvinar gravida vulputate. Curabitur ullamcorper porta diam, ac feugiat erat sodales auctor. Proin id tellus euismod lacus pretium feugiat. Vivamus libero mi, ullamcorper vel sapien vitae, rhoncus ornas
-                  </Card>
-                </Col>
+
               </Row>
             </div>
           </div></div>
